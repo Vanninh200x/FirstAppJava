@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_caro"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_above="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkbox2" />
+
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkbox2"
+        android:layout_toRightOf="@id/checkbox1"
+        android:thumb="@drawable/rsz_11icon_face_don" />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:thumb="@drawable/rsz_icon_face_tungngo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkbox3"
+        android:layout_toRightOf="@+id/checkbox2" />
+
+    <SeekBar
+        android:id="@+id/seekbar3"
+        android:thumb="@drawable/rsz_icon_face_johncina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checkbox3" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="#3333"
+        android:src="@drawable/run" />
+
+    <TextView
+        android:id="@+id/textviewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#DC1304"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_baseline_play_arrow_24" />
+
+
+
+</RelativeLayout>
